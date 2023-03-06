@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +15,74 @@
   </style>
 </head>
 <body>
+  <div class="card">
+  <div class="card_container">
+    <div class="rating_section">
+      <div class="star_icon">
+        <img src="./images/icon-star.svg" alt="star_icon" >
+      </div>
+      <h2 class="title"> How did We do</h2>
+      <p class = "descriptions"> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!  </p>
+    <!-- </div>
+  </div>
+  
+  </div> -->
+  
 
   <!-- Rating state start -->
 
-  How did we do?
+ 
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  <div class="ratings">
 
-  1 2 3 4 5
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+ <button class="sub_bn">
 
-  Submit
+  submit
+ </button>
+  </div>
+  <div class="thank_section hidden">
+    <img src="./images/illustration-thank-you.svg" alt="thank_section" >
+    <div class="chip">
+      <p>
+        You selected <span id = "rate"></span>out of 5
+      </p>
+    </div>
+      <h2 class="title">
+        Thank You
+      </h2>
+      <p class="descriptions">
+       We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! 
+      </p>
+    </div>
+  </div>
+  </div>
+
+
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  
+  
 
   <!-- Thank you state end -->
 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Dev Raj Nepal</a>.
+  </div> -->
+ <script src="app.js"></script>
 </body>
 </html>
